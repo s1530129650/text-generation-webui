@@ -193,3 +193,16 @@ Before reporting a bug, make sure that you have:
 - Verbose preset: Anonymous 4chan user.
 - NovelAI and KoboldAI presets: https://github.com/KoboldAI/KoboldAI-Client/wiki/Settings-Presets
 - Pygmalion preset, code for early stopping in chat mode, code for some of the sliders, --chat mode colors: https://github.com/PygmalionAI/gradio-ui/
+
+## different transformer versio
+git+https://github.com/zphang/transformers.git@68d640f7c368bcaaaecfc678f11908ebbd3d6176
+这个时候的https://github.com/zphang/transformers/commit/68d640f7c368bcaaaecfc678f11908ebbd3d6176的效果很简短，很好。
+
+
+
+|size| Mem| load time |inference time|
+|:--:|:--:|:--:|:--:|
+|7B|单卡 V100 13G||20s|
+|13B|四卡 V100 |81s||
+|30B| 四卡 V10|68.8||
+|65B||||
